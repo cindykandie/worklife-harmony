@@ -1,3 +1,4 @@
+import { Box, Center } from 'native-base';
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { s } from 'react-native-wind';
@@ -23,11 +24,11 @@ const HomeScreen = ({navigation}) => {
 
   return (
     <ScrollView style={s`p-4 bg-purple-400`}>
-      {/* Welcome Message */}
-      <Text style={s`text-2xl font-bold mb-4`}>Welcome to WorkLife Harmony!</Text>
-
-      {/* Featured Content */}
-      <Text style={s`text-lg mb-2`}>Featured Content:</Text>
+      
+      <Text style={s`text-2xl font-bold mb-4`}>Welcome to WorkLife Harmony!!</Text>
+      <Box>Hello there!</Box>
+     
+      <Center style={s`text-lg mb-2`} _text= {{fontWeight: 'bold'}}>Featured Content:</Center>
       {featuredContent.map((item, index) => (
         <TouchableOpacity
           key={index}

@@ -1,13 +1,15 @@
 import React from 'react';
-import AppNavigation from './Navigation'; // Import your navigation component
-import { View } from 'react-native';
-import { s } from 'react-native-wind';
+import { NativeBaseProvider, Box } from "native-base";
+
+import AppNavigation from './Navigation'; 
 
 
 
 function App() {
   return (
-    <AppNavigation />
+    <NativeBaseProvider>
+      <AppNavigation />
+    </NativeBaseProvider>
   );
 }
 
