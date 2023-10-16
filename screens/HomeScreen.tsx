@@ -1,8 +1,8 @@
 import { Box, Center } from 'native-base';
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 import { s } from 'react-native-wind';
-
+// import W from '../assets/svg/home.png'
 const HomeScreen = ({navigation}) => {
   // Simulated data for featured content
   const featuredContent = [
@@ -62,6 +62,8 @@ const HomeScreen = ({navigation}) => {
           <Text style={s`text-white font-bold`}>Training</Text>
         </TouchableOpacity>
       </View>
+
+      <Image source={require('../assets/svg/home.png')} />
 
       {/* Motivational Quotes (you can fetch these dynamically) */}
       <Text style={s`text-lg mt-4`}>Motivational Quote of the Day:</Text>

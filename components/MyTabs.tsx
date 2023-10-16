@@ -7,10 +7,11 @@ import { NavigationHelpers, NavigationProp, ParamListBase, TabNavigationState } 
 import HomeScreen from '../screens/HomeScreen';
 import WellnessScreen from '../screens/WellnessScreen';
 import TrainingScreen from '../screens/TrainingScreen';
-import Ionicons from 'react-native-ionicons';
-import { BottomTabDescriptorMap, BottomTabNavigationEventMap } from '@react-navigation/bottom-tabs/lib/typescript/src/types';
-import { EdgeInsets } from 'react-native-safe-area-context';
-
+import {
+  BottomTabDescriptorMap,
+  BottomTabNavigationEventMap,
+} from '@react-navigation/bottom-tabs/lib/typescript/src/types';
+import {EdgeInsets} from 'react-native-safe-area-context';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,7 +22,12 @@ type CustomTabBarProps = {
   insets: EdgeInsets;
 };
 
-  const CustomTabBar: React.FC<CustomTabBarProps> = ({ state, descriptors, navigation, insets }) => {
+const CustomTabBar: React.FC<CustomTabBarProps> = ({
+  state,
+  descriptors,
+  navigation,
+  insets,
+}) => {
 
     const icons = {
         Home: 'home',

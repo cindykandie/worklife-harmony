@@ -21,7 +21,7 @@ function AppNavigation() {
         <Stack.Screen name="WellnessScreen" component={WellnessScreen} options={{ title: 'Wellness' }} />
         <Stack.Screen name="TrainingScreen" component={TrainingScreen} options={{ title: 'Training' }} />
       </Stack.Navigator>
-      <MyDrawer/>
+      {/* <MyDrawer/> */}
     </NavigationContainer>
   );
 }
